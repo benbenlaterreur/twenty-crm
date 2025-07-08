@@ -135,3 +135,83 @@ Below are a few features we have implemented to date:
 - Join our [Discord](https://discord.gg/cx5n4Jzs57)
 - Improve translations on [Crowdin](https://twenty.crowdin.com/twenty) 
 - [Contributions](https://github.com/twentyhq/twenty/contribute) are, of course, most welcome! 
+
+# My Twenty CRM Instance
+
+This is my personal instance of [Twenty CRM](https://github.com/twentyhq/twenty) - an open-source alternative to Salesforce.
+
+## 🚀 Quick Start
+
+### Using Docker (Recommended)
+
+1. **Navigate to Docker directory:**
+   ```bash
+   cd packages/twenty-docker
+   ```
+
+2. **Start the services:**
+   ```bash
+   docker-compose up -d
+   ```
+
+3. **Access the CRM:**
+   Open your browser and go to: **http://localhost:3000**
+
+### Services Running:
+- **Frontend & API**: http://localhost:3000
+- **Database**: PostgreSQL 16
+- **Cache**: Redis
+- **Background Jobs**: Worker service
+
+## 🛠️ Development Setup
+
+If you want to run in development mode:
+
+1. **Install dependencies:**
+   ```bash
+   yarn install
+   ```
+
+2. **Start development servers:**
+   ```bash
+   yarn start
+   ```
+
+## 📚 Original Twenty CRM Documentation
+
+For detailed documentation, features, and advanced setup, visit:
+- 🌐 [Twenty Website](https://twenty.com)
+- 📖 [Developer Documentation](https://twenty.com/developers)
+- 💬 [Discord Community](https://discord.gg/cx5n4Jzs57)
+
+## 🔧 Configuration
+
+The Docker setup uses environment variables defined in `packages/twenty-docker/.env`:
+- `APP_SECRET`: Secure random string for authentication
+- `SERVER_URL`: http://localhost:3000
+- `STORAGE_TYPE`: local (for file storage)
+
+## 📦 Tech Stack
+
+- **Frontend**: React with Recoil, Emotion, and Lingui
+- **Backend**: NestJS with GraphQL
+- **Database**: PostgreSQL 16
+- **Cache**: Redis
+- **Queue**: BullMQ
+- **Container**: Docker & Docker Compose
+
+## 🤝 Contributing
+
+This repository is based on the original Twenty CRM. For contributing to the main project:
+- Visit the [original repository](https://github.com/twentyhq/twenty)
+- Check out their [contributing guidelines](https://github.com/twentyhq/twenty/blob/main/.github/CONTRIBUTING.md)
+
+## 📝 License
+
+This project inherits the license from the original Twenty CRM project.
+
+---
+
+**Original Twenty CRM README content:**
+
+---
